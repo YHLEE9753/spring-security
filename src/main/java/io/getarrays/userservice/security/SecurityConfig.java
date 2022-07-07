@@ -45,7 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
         //(순서1)
-        http.authorizeRequests().antMatchers("api/login/**").permitAll(); // 로그인은 누구나 접근 가능하게
+        http.authorizeRequests().antMatchers("/api/login/**", "/api/token/refresh/**").permitAll(); // 로그인은 누구나 접근 가능하게
         //(순서2)
         http.authorizeRequests().antMatchers(GET, "/api/user/**").hasAnyAuthority("ROLE_USER"); // ** 는 뒤에 오는 모든것 의미
         http.authorizeRequests().antMatchers(POST, "/api/user/save/**").hasAnyAuthority("ROLE_ADMIN");
