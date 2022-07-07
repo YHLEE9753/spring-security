@@ -18,10 +18,6 @@ public class UserserviceApplication {
 		SpringApplication.run(UserserviceApplication.class, args);
 	}
 
-	@Bean
-	PasswordEncoder passwordEncoder(){
-		return new BCryptPasswordEncoder();
-	}
 
 	@Bean
 	CommandLineRunner run(UserService userService){
