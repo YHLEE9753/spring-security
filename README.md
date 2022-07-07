@@ -437,5 +437,3 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
 http.authorizeRequests().antMatchers("/api/login/**", "/api/token/refresh/**").permitAll(); // 로그인은 누구나 접근 가능하게
 ```
 
-### Controller 설정
-
