@@ -423,6 +423,7 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
 ```
 ### CustomAuthorizationFilter, SecurityConfig 설정
 - refreshToken 을 통해 accessToken 을 갱신할때도 권한이 없이 접근할 수 있게 설정
+
 **CustomAuthorizationFilter**
 ```java
     @Override
